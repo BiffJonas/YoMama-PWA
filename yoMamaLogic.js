@@ -14,9 +14,10 @@ const YoMamaJokeGenerator = async () => {
 
 const renderJoke = async () => {
 	let joke = await YoMamaJokeGenerator();
-	const replacementWord = "Alfred's";
+	const names = ["Alfred", "Erik", "Albin", "Thor"];
+	let randomNumber = Math.floor(Math.random() * names.length);
 	const regex = new RegExp("\\byo\\b", "gi");
-	joke = joke.replace(regex, replacementWord);
+	joke = joke.replace(regex, names[randomNumber] + "'s");
 	document.getElementById("joke-p").textContent = joke;
 };
 
