@@ -1,0 +1,21 @@
+{
+	"name": "YoMamaGenerator",
+	"short_name": "YoMamaJokes",
+	"description": "A PWA that generates yo mama jokes",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#3498db",
+	"icons": [
+		{
+			"src": "yoMamaIcon.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "yoMamaIcon.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}
