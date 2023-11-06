@@ -13,7 +13,10 @@ const YoMamaJokeGenerator = async () => {
 };
 
 const renderJoke = async () => {
-	joke = await YoMamaJokeGenerator();
+	let joke = await YoMamaJokeGenerator();
+	const replacementWord = "Alfred's";
+	const regex = new RegExp("\\byo\\b", "gi");
+	joke = joke.replace(regex, replacementWord);
 	document.getElementById("joke-p").textContent = joke;
 };
 
